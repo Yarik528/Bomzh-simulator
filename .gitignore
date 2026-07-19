@@ -1,0 +1,54 @@
+# Скомпилированные файлы C++
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+*.tlog
+*.lastbuildstate
+ipch/
+x64/
+x86/
+Debug/
+Release/
+build/
+out/
+bin/
+obj/
+
+# Файлы Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pidb
+*.scc
+*.vspscc
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Временные файлы
+*.tmp
+*.log
+*.cache
+
+# Сборки (их не храним в гите)
+builds/*
+!builds/.gitkeep
+
+# Большие файлы
+*.zip
+*.rar
+*.7z
