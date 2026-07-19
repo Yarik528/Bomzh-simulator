@@ -29,7 +29,6 @@ overlay = Entity(
 # ===== ЛОГОТИП =====
 title = Text(
     text='СИМУЛЯТОР БОМЖА',
-    font='Vera.ttf',  # Можно заменить на свой шрифт
     origin=(0, 0),
     position=(0, 0.15),
     scale=2.5,
