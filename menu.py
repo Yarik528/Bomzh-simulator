@@ -7,6 +7,7 @@ window.borderless = False
 window.fullscreen = False
 window.exit_button.visible = False
 window.fps_counter.enabled = False
+window.entity_counter.enabled = False  # Убираем счетчик entities
 
 # ФОН
 bg = Entity(
@@ -42,13 +43,13 @@ subtitle = Text(
     background=True
 )
 
-# КНОПКИ
+# КНОПКИ (ТЕМНЫЙ ТЕКСТ НА БЕЛОМ ФОНЕ)
 play_btn = Button(
     text='ИГРАТЬ',
     scale=(0.35, 0.08),
     position=(0, -0.12),
-    color=color.rgba(60, 70, 80, 200),
-    text_color=color.white,
+    color=color.white,  # БЕЛЫЙ ФОН
+    text_color=color.black,  # ЧЕРНЫЙ ТЕКСТ
     text_scale=0.8
 )
 
@@ -56,8 +57,8 @@ settings_btn = Button(
     text='НАСТРОЙКИ',
     scale=(0.35, 0.08),
     position=(0, -0.22),
-    color=color.rgba(60, 70, 80, 200),
-    text_color=color.white,
+    color=color.white,  # БЕЛЫЙ ФОН
+    text_color=color.black,  # ЧЕРНЫЙ ТЕКСТ
     text_scale=0.8
 )
 
@@ -65,17 +66,17 @@ quit_btn = Button(
     text='ВЫХОД',
     scale=(0.35, 0.08),
     position=(0, -0.32),
-    color=color.rgba(60, 70, 80, 200),
-    text_color=color.white,
+    color=color.white,  # БЕЛЫЙ ФОН
+    text_color=color.black,  # ЧЕРНЫЙ ТЕКСТ
     text_scale=0.8
 )
 
-# Эффекты при наведении
+# Эффекты при наведении (делаем кнопки серыми)
 def btn_hover(btn):
-    btn.color = color.rgba(80, 90, 100, 220)
+    btn.color = color.light_gray
 
 def btn_normal(btn):
-    btn.color = color.rgba(60, 70, 80, 200)
+    btn.color = color.white
 
 play_btn.on_mouse_enter = lambda: btn_hover(play_btn)
 play_btn.on_mouse_exit = lambda: btn_normal(play_btn)
