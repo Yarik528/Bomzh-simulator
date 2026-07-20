@@ -8,6 +8,7 @@ window.fullscreen = False
 window.exit_button.visible = False
 window.fps_counter.enabled = False
 window.entity_counter.enabled = False  # Убираем счетчик entities
+window.collider_counter.enabled = False
 
 # ФОН
 bg = Entity(
